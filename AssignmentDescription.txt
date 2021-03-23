@@ -1,0 +1,66 @@
+For this assignment you are going to add access modifiers to the properties and methods of the BegInheritance classes, so that it is properly encapsulated.
+You also need to add JavaDoc comments to the methods of the classes. 
+
+
+
+BegInheritance assignment Description for reference:
+/////////////////////////////////
+For this assignment you are going to make 3 classes.  The Student class and the Teacher class should extend from the Person class. 
+Below you will find a list of properties and methods and constructors that the Student and Teacher class should have it is your job
+to figure out what can actually be put in the Person class so that you are not duplicating code in the Student and Teacher.
+
+When you submit to mimir it will use my "Main" class to test your classes to make sure they do what they are supposed to.  Make sure
+that your methods and classes are spelled the same as listed below (case sensitive).  Mimir will not check to make sure if everyting is
+setup to be properly inherited so it will be hand check and entered as part of the grade during the explanation.
+
+////////////////////////////
+Student
+//properties
+-firstName -(String)
+-lastName  -(String)
+-phoneNumber -(long)
+-daysTardy - (int)
+-daysAbsent - (int)
+-username -(String)
+-schoolGrade  - (int) 
+
+//Constructor
+should accept parameters for (firstName,lastName,phoneNumber,username and schoolGrade) and set accordingly
+(call the base/parent/super constructor to set properties that are part of the base/parent/super class),
+daysAbsent and daysTardy should be initialized to 0;
+
+//methods
+--getSchoolGrade()   -  should return the schoolGrade property
+--getDaysTardy()  - should return the daysTardy property
+--getDaysAbsent()  - should return the daysAbsent property
+--getContactInfo()  - should return :  "first name: " + firstName + " last name: " + lastName + " phone number: " + phoneNumber
+--getUsername()  - should return the username property
+--markTardy()  -  should add 1 to daysTardy and return nothing
+--markAbsent() - should add 1 to daysAbsent and return nothing
+
+
+///////////////////////////////////////////////////////////////
+Teacher
+
+//properties
+-first Name - (String)
+-lastName  - (String)
+-phoneNumber  - (long)
+-classTaught  - (String)
+-username  - (String)
+-yearsTaught  - (int)
+
+//Constructor 
+should accept parameters (firstName, lastName, phoneNumber, username, classTaught, yearsTaught) for all values and set accordingly
+(call the base/parent/super constructor to set properties that are part of the base/parent class)
+
+//Methods
+--getYearsTaught()  - should return the yearsTaught property
+--getClassTaught()  - should return the classTaught property
+--getContactInfo()  -  should return : "first name: " + firstName + " last name: " + lastName + " phone number: " + phoneNumber
+--getUsername() - should return the username property
+
+//////////////////////////////////////////////////////////////////
+Person
+- This is to be used as the base class for Teacher/Student and based on the above descriptions of Student and Teacher you decide what goes in Person.
+
